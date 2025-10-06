@@ -113,6 +113,11 @@ header {
                             }
                             img {
                                 width: .75rem; height: auto;
+                                transition: all .3s ease;
+
+                                &.rotate {
+                                    transform: rotateZ(-180deg);
+                                }
                             }
                         }
     

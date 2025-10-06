@@ -36,7 +36,7 @@ function App() {
                             <li className="nav-menu__list-item">
                                 <a href="#features"  onClick={() => setIsFeaturesOpen(!isFeatureSOpen)}>
                                     Features
-                                    <img src="/images/icon-arrow-down.svg" alt="" />
+                                    <img className={isFeatureSOpen ? "" : "rotate"} src="/images/icon-arrow-up.svg" alt="Arrow icon" loading="lazy"/>           
                                 </a>
                                 <ul className={`dropdown-list ${isFeatureSOpen ? "show" : ""}`}>
                                     {
@@ -54,7 +54,7 @@ function App() {
                             <li className="nav-menu__list-item">
                                 <a href="#company" onClick={() => setIsCompanyOpen(!isCompanySOpen)}>
                                     Company
-                                    <img src="/images/icon-arrow-down.svg" alt="" />
+                                    <img className={isCompanySOpen ? "" : "rotate"} src="/images/icon-arrow-up.svg" alt="Arrow icon" loading="lazy"/>           
                                 </a>
                                 <ul className={`dropdown-list ${isCompanySOpen ? "show" : ""}`}>
                                     {
